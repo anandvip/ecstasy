@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="A personal plan for Isha's programme, Soak in Ecstasy of Enlightenment with Sadhguru, in Jaipur on 10 January 2027.">
+<link rel="icon" href="data:,">
+<title>Soak in Ecstasy · Jaipur, 10 January 2027</title>
+<style>
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-color: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-color: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-accent: #ecf0f1;
+    --border-color: #bdc3c7;
+    --header-fg: #ffffff;
+    --footer-bg: #2c3e50;
+    --footer-fg: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.15);
+    --theme-btn-bg: rgba(255, 255, 255, 0.14);
+    --theme-btn-border: rgba(255, 255, 255, 0.55);
+    --nav-mobile-bg: rgba(255, 255, 255, 0.98);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --max-width: 900px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --primary-color: #d5dee8;
+        --secondary-color: #c5d0da;
+        --accent-color: #f07a6e;
+        --text-color: #ece8e1;
+        --text-light: #a39d93;
+        --bg-color: #181b21;
+        --bg-secondary: #0f1115;
+        --bg-accent: #232830;
+        --border-color: #2a2f38;
+        --header-fg: #ffffff;
+        --footer-bg: #141820;
+        --footer-fg: #ece8e1;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+        --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.45);
+        --theme-btn-bg: rgba(255, 255, 255, 0.1);
+        --theme-btn-border: rgba(255, 255, 255, 0.45);
+        --nav-mobile-bg: rgba(24, 27, 33, 0.98);
+        color-scheme: dark;
+    }
+}
+
+:root[data-theme="dark"] {
+    --primary-color: #d5dee8;
+    --secondary-color: #c5d0da;
+    --accent-color: #f07a6e;
+    --text-color: #ece8e1;
+    --text-light: #a39d93;
+    --bg-color: #181b21;
+    --bg-secondary: #0f1115;
+    --bg-accent: #232830;
+    --border-color: #2a2f38;
+    --header-fg: #ffffff;
+    --footer-bg: #141820;
+    --footer-fg: #ece8e1;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+    --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.45);
+    --theme-btn-bg: rgba(255, 255, 255, 0.1);
+    --theme-btn-border: rgba(255, 255, 255, 0.45);
+    --nav-mobile-bg: rgba(24, 27, 33, 0.98);
+    color-scheme: dark;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+@media (max-width: 768px) {
+    html { scroll-padding-top: 1rem; }
+}
+
+body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-color) 100%);
+    min-height: 100vh;
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.skip {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    z-index: 2000;
+}
+
+.skip:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: var(--header-fg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+header .lede {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+#theme {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--header-fg);
+    background: var(--theme-btn-bg);
+    border: 1px solid var(--theme-btn-border);
+    border-radius: 10px;
+    padding: 6px 11px;
+    min-height: 38px;
+    cursor: pointer;
+}
+
+#theme:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+nav {
+    background: var(--bg-color);
+    padding: 1rem 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: var(--spacing-sm);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.35rem;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.4rem 0.65rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    font-weight: 500;
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    background: #2c3e50;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-toggle {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    background: #2c3e50;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav-toggle:hover {
+    background: #34495e;
+    transform: scale(1.05);
+}
+
+.hamburger {
+    position: relative;
+    width: 24px;
+    height: 20px;
+    margin: auto;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: var(--transition);
+    left: 0;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+.nav-toggle.active .hamburger span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.nav-toggle.active .hamburger span:nth-child(2) { opacity: 0; }
+.nav-toggle.active .hamburger span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .nav-toggle { display: block; }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        padding: var(--spacing-xl) var(--spacing-md);
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+        backdrop-filter: blur(20px);
+        background: var(--nav-mobile-bg);
+    }
+
+    nav.active {
+        right: 0;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    nav li { border-bottom: 1px solid var(--border-color); }
+    nav li:last-child { border-bottom: none; }
+
+    nav a {
+        padding: var(--spacing-sm) var(--spacing-md);
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+article {
+    background: var(--bg-color);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article:hover { box-shadow: var(--shadow-hover); }
+
+article h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--accent-color);
+    line-height: 1.3;
+}
+
+article h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    color: var(--secondary-color);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+article h3:first-child { margin-top: 0; }
+
+p {
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+    hyphens: auto;
+}
+
+p:last-child { margin-bottom: 0; }
+
+.lead p { margin-bottom: var(--spacing-sm); }
+.lead p:last-child { margin-bottom: 0; }
+
+em {
+    font-style: italic;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+cite {
+    font-style: italic;
+    font-weight: 500;
+    color: inherit;
+}
+
+
+strong {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+    padding: var(--spacing-md);
+    border-radius: 0.75rem;
+    margin: var(--spacing-md) 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+.highlight-box p { margin-bottom: var(--spacing-xs); }
+.highlight-box p:last-child { margin-bottom: 0; }
+.highlight-box b {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+article ul, article ol {
+    margin: 0 0 var(--spacing-sm);
+    padding-left: 1.5rem;
+}
+
+article li { margin-bottom: var(--spacing-xs); }
+
+.fact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fact-list li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: 0;
+}
+
+.muted { color: var(--text-light); }
+
+.option-card {
+    background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-secondary) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin: var(--spacing-sm) 0 0;
+}
+
+.option-card h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.15rem;
+}
+
+.kv {
+    display: grid;
+    grid-template-columns: minmax(8rem, 42%) 1fr;
+    gap: 0.25rem 0.75rem;
+    margin: 0;
+}
+
+.kv div {
+    display: contents;
+}
+
+.kv dt {
+    color: var(--text-light);
+    font-size: 0.92rem;
+    padding: 0.2rem 0;
+}
+
+.kv dd {
+    margin: 0;
+    font-weight: 600;
+    padding: 0.2rem 0;
+}
+
+.kv .total dt, .kv .total dd {
+    color: var(--text-color);
+}
+.kv .total dt {
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.35rem;
+    padding-top: 0.5rem;
+}
+.kv .total dd {
+    padding-top: 0.1rem;
+}
+
+.kv .ceiling dt, .kv .ceiling dd {
+    color: var(--text-color);
+}
+
+.budget-table-wrap {
+    overflow-x: auto;
+    margin: var(--spacing-sm) 0 var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    min-width: 42rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.65rem 0.7rem;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+th {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--text-light);
+    font-weight: 600;
+    background: var(--bg-accent);
+}
+
+thead th { text-transform: uppercase; }
+
+tr:last-child td { border-bottom: none; }
+
+th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--bg-color);
+    font-weight: 600;
+    box-shadow: 4px 0 6px -4px rgba(0, 0, 0, 0.18);
+    min-width: 8.5rem;
+}
+
+th:first-child { background: var(--bg-accent); }
+
+td.num { white-space: nowrap; }
+
+.ceilings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+}
+
+@media (max-width: 700px) {
+    .budget-table-wrap { display: none; }
+    .ceilings { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 701px) {
+    .budget-cards { display: none; }
+}
+
+.day {
+    margin-bottom: var(--spacing-sm);
+}
+
+.day b { color: var(--primary-color); }
+
+footer {
+    text-align: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: var(--footer-bg);
+    color: var(--footer-fg);
+    margin-top: var(--spacing-xl);
+    border-radius: 2rem 2rem 0 0;
+}
+
+footer p {
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+footer p:last-child { margin-bottom: 0; }
+
+footer b, footer strong {
+    color: var(--footer-fg);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 2.5rem;
+    }
+
+    .container { padding-bottom: 5rem; }
+
+    article { padding: var(--spacing-md); }
+
+    p { text-align: left; }
+
+    header { border-radius: 0 0 1.5rem 1.5rem; }
+
+    footer {
+                border-radius: 1.5rem 1.5rem 0 0;
+                padding-bottom: 5.5rem;
+            }
+
+    .kv { grid-template-columns: 1fr; gap: 0; }
+    .kv dt { padding-bottom: 0; }
+    .kv dd { padding-top: 0; margin-bottom: 0.45rem; }
+}
+
+@media print {
+    body { background: white; }
+    article { box-shadow: none; }
+    nav, .nav-toggle, #theme { display: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+}
+
+a:focus, button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header>
+    <button id="theme" type="button" aria-label="Switch light or dark theme">◐ Theme</button>
+    <h1>Soak in Ecstasy</h1>
+    <p class="lede">Looking at things as they are, with a grateful heart</p>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-controls="mainNav" aria-expanded="false">
+    <div class="hamburger" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</button>
+
+<div class="container" id="content">
+    <nav id="mainNav" aria-label="Page sections">
+        <ul>
+            <li><a href="#event" class="nav-link">The event</a></li>
+            <li><a href="#stay" class="nav-link">Stay</a></li>
+            <li><a href="#rhythm" class="nav-link">Rhythm</a></li>
+            <li><a href="#routes" class="nav-link">Routes</a></li>
+            <li><a href="#vehicles" class="nav-link">Vehicles</a></li>
+            <li><a href="#train" class="nav-link">Train</a></li>
+            <li><a href="#budget" class="nav-link">Budget</a></li>
+            <li><a href="#open" class="nav-link">Still open</a></li>
+        </ul>
+    </nav>
+
+    <article class="lead">
+        <p>This is a simple record of a plan: to sit at Isha's programme, <cite>Soak in Ecstasy of Enlightenment with Sadhguru</cite>, in Jaipur on Sunday, 10 January 2027. Some things are already settled. Some are still open. Looking at each of them as they are is enough for now, and the travelling can be done with rest and gratitude.</p>
+    </article>
+
+    <article id="event">
+        <h2>The event</h2>
+        <p>Isha's <cite>Soak in Ecstasy of Enlightenment with Sadhguru</cite> is on Sunday, 10 January 2027, at the Jaipur Exhibition &amp; Convention Centre (JECC), Sitapura, Jaipur.</p>
+        <div class="highlight-box">
+            <p><b>The day itself</b></p>
+            <p>Check-in closes at 8:00 AM. Be seated 20 minutes before the 9:00 AM first session.</p>
+            <p>Seating is on the floor, with a few chairs for medical needs.</p>
+            <p>Continue Inner Engineering practice (Shambhavi) beforehand.</p>
+            <p>The e-pass will come by email later.</p>
+            <p>Registration is already paid: <strong>₹2,250</strong>.</p>
+        </div>
+    </article>
+
+    <article id="stay">
+        <h2>Stay</h2>
+        <p>A hotel has been shortlisted. It is <strong>not booked</strong>.</p>
+        <h3>7 Apple Hotel</h3>
+        <p>Sector 8, Chetak Marg, Pratap Nagar, Sanganer, Jaipur. It is 2.7 km from JECC, about 5 minutes away.</p>
+        <ul>
+            <li>9 to 11 January, 2 nights.</li>
+            <li>Deluxe Queen with breakfast: ₹7,949 + 5% GST = <strong>₹8,346</strong>.</li>
+            <li>Pay at the property. Free cancellation before 8 January.</li>
+        </ul>
+        <p>On Booking.com it is rated 8.1 from 82 reviews: comfort and location 8.8, staff 8.6, cleanliness 8.5. Guests praise the cleanliness, staff and food. The main complaint is small rooms.</p>
+        <h3>Alternative considered</h3>
+        <p>Cygnett Inn Airport, ₹8,800 with breakfast, rated 7.9 from 22 reviews. It is prepaid only, with complaints about the AC and the beds.</p>
+    </article>
+
+    <article id="rhythm">
+        <h2>Three-day rhythm</h2>
+        <p>Rest comes first: a quiet arrival, a full night before the event, and a daytime journey home.</p>
+        <div class="highlight-box">
+            <p class="day"><b>9 January</b> Leave mid-morning after the fog lifts, arrive by evening, have a light dinner, and sleep early.</p>
+            <p class="day"><b>10 January</b> The event. The hotel is 5 minutes from JECC.</p>
+            <p class="day"><b>11 January</b> Breakfast, then a daytime return. No pre-dawn start.</p>
+        </div>
+        <p>The point is good rest before the event, and a fresh body and mind for the ride home. January mornings in this belt are often 4 to 9°C, with a risk of dense fog on NH-44 from Karnal to Panipat.</p>
+    </article>
+
+    <article id="routes">
+        <h2>Routes</h2>
+        <p>By car the road is about 405 km, 4.5 to 5 hours, via the Trans-Haryana Expressway (NH-152D), then Narnaul and NH-48.</p>
+        <p>Bikes are not allowed on that expressway, so they go via NH-44 and NH-48 with the Gurugram service roads, or via Rohtak and Rewari: 420 to 436 km.</p>
+        <ul>
+            <li>Car tolls are ₹580 to ₹900 each way. Bikes pay no tolls.</li>
+            <li>Petrol on 16 November: ₹102.75/L in Kurukshetra, ₹112.69/L in Jaipur. Fill up in Haryana.</li>
+        </ul>
+    </article>
+
+    <article id="vehicles">
+        <h2>Vehicles</h2>
+        <h3>Hyundai Creta SX petrol</h3>
+        <p>A 50 L tank, 17 to 18 kmpl, and a safe range of about 720 to 765 km. No stop going. The round trip uses 46 to 52 L (₹4,700 to ₹5,300), with one top-up on the return.</p>
+        <h3>Honda CBR650R</h3>
+        <p>A 15.4 L tank (the low-fuel warning comes on at 3 L), 18 to 20 kmpl on the highway, and a range of 225 to 250 km. One stop each way, at about 200 to 220 km. The round trip uses 43 to 50 L (₹4,400 to ₹5,100).</p>
+        <h3>Hero XPulse 210</h3>
+        <p>A 13 L tank plus a 5 L jerrycan (Rotopax style), so 18 L in all. 30 to 35 kmpl, and a range of 480 to 560 km. One stop by choice. The round trip uses 25 to 30 L (₹2,500 to ₹3,100).</p>
+        <p>Jerrycan safety: keep it sealed, mounted away from the exhaust, filled to 90%, and re-check the bolts.</p>
+        <h3>Bike rhythm</h3>
+        <p>Stretch every hour. A hydration and susu break every 2 hours. About 3 or 4 breaks each way, 7 to 8 hours door to door.</p>
+    </article>
+
+    <article id="train">
+        <h2>Train</h2>
+        <p>Chair Car is the option written out below. Executive is noted only for the fare.</p>
+        <h3>9 January, going</h3>
+        <ul>
+            <li>Kalka Shatabdi 12006, Kurukshetra 08:10 to New Delhi 10:15.</li>
+            <li>Metro to Delhi Cantt (₹43).</li>
+            <li>Vande Bharat 26482, 15:10 to Jaipur 19:00.</li>
+        </ul>
+        <h3>11 January, returning</h3>
+        <ul>
+            <li>Vande Bharat 20977, Jaipur 07:47 to Delhi Cantt 11:30.</li>
+            <li>Kalka Shatabdi 12005, New Delhi 17:15 to Kurukshetra 19:00.</li>
+        </ul>
+        <p>Fares: Chair Car ₹2,965 round trip, Executive ₹5,200.</p>
+        <p>The roughly 5-hour Delhi buffer is deliberate, against fog. Backups on the return are the Double Decker 12986 at 17:25, or Vande Bharat 20978 at 18:28.</p>
+        <p>IRCTC booking is open (the 60-day window). These fares are November quotes; they should be rechecked.</p>
+    </article>
+
+    <article id="budget">
+        <h2>Budget</h2>
+        <p>Figures are in ₹, before a buffer. Stay for the road options is the hotel at ₹8,346, plus food of ₹1,000–2,500, plus local costs. The train stay range is a little higher, at ₹9,500–11,000.</p>
+
+        <div class="budget-cards">
+            <div class="option-card">
+                <h3>Creta</h3>
+                <dl class="kv">
+                    <div><dt>Already spent (registration)</dt><dd>₹2,250</dd></div>
+                    <div><dt>Kurukshetra to hotel</dt><dd>₹2,930–3,550</dd></div>
+                    <div><dt>Stay</dt><dd>₹9,350–10,850</dd></div>
+                    <div><dt>Hotel to Kurukshetra</dt><dd>₹2,930–3,550</dd></div>
+                    <div class="total"><dt>Total</dt><dd>₹17,460–20,200</dd></div>
+                    <div class="ceiling"><dt>Suggested ceiling</dt><dd>₹22,000</dd></div>
+                </dl>
+            </div>
+            <div class="option-card">
+                <h3>CBR650R</h3>
+                <dl class="kv">
+                    <div><dt>Already spent (registration)</dt><dd>₹2,250</dd></div>
+                    <div><dt>Kurukshetra to hotel</dt><dd>₹2,200–2,550</dd></div>
+                    <div><dt>Stay</dt><dd>₹9,350–10,850</dd></div>
+                    <div><dt>Hotel to Kurukshetra</dt><dd>₹2,200–2,550</dd></div>
+                    <div class="total"><dt>Total</dt><dd>₹16,000–18,200</dd></div>
+                    <div class="ceiling"><dt>Suggested ceiling</dt><dd>₹20,000</dd></div>
+                </dl>
+            </div>
+            <div class="option-card">
+                <h3>XPulse 210</h3>
+                <dl class="kv">
+                    <div><dt>Already spent (registration)</dt><dd>₹2,250</dd></div>
+                    <div><dt>Kurukshetra to hotel</dt><dd>₹1,250–1,550</dd></div>
+                    <div><dt>Stay</dt><dd>₹9,350–10,850</dd></div>
+                    <div><dt>Hotel to Kurukshetra</dt><dd>₹1,250–1,550</dd></div>
+                    <div class="total"><dt>Total</dt><dd>₹14,100–16,200</dd></div>
+                    <div class="ceiling"><dt>Suggested ceiling</dt><dd>₹18,000</dd></div>
+                </dl>
+            </div>
+            <div class="option-card">
+                <h3>Train, Chair Car</h3>
+                <dl class="kv">
+                    <div><dt>Already spent (registration)</dt><dd>₹2,250</dd></div>
+                    <div><dt>Kurukshetra to hotel</dt><dd>₹1,890–2,860</dd></div>
+                    <div><dt>Stay</dt><dd>₹9,500–11,000</dd></div>
+                    <div><dt>Hotel to Kurukshetra</dt><dd>₹1,930–2,910</dd></div>
+                    <div class="total"><dt>Total</dt><dd>₹15,570–19,020</dd></div>
+                    <div class="ceiling"><dt>Suggested ceiling</dt><dd>₹21,000</dd></div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="budget-table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Option</th>
+                        <th scope="col">Already spent (registration)</th>
+                        <th scope="col">Kurukshetra to hotel</th>
+                        <th scope="col">Stay</th>
+                        <th scope="col">Hotel to Kurukshetra</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Creta</th>
+                        <td class="num">₹2,250</td>
+                        <td class="num">₹2,930–3,550</td>
+                        <td class="num">₹9,350–10,850</td>
+                        <td class="num">₹2,930–3,550</td>
+                        <td class="num">₹17,460–20,200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">CBR650R</th>
+                        <td class="num">₹2,250</td>
+                        <td class="num">₹2,200–2,550</td>
+                        <td class="num">₹9,350–10,850</td>
+                        <td class="num">₹2,200–2,550</td>
+                        <td class="num">₹16,000–18,200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">XPulse 210</th>
+                        <td class="num">₹2,250</td>
+                        <td class="num">₹1,250–1,550</td>
+                        <td class="num">₹9,350–10,850</td>
+                        <td class="num">₹1,250–1,550</td>
+                        <td class="num">₹14,100–16,200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Train, Chair Car</th>
+                        <td class="num">₹2,250</td>
+                        <td class="num">₹1,890–2,860</td>
+                        <td class="num">₹9,500–11,000</td>
+                        <td class="num">₹1,930–2,910</td>
+                        <td class="num">₹15,570–19,020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Suggested ceiling</h3>
+        <p>About 10% above the totals, as a simple upper bound.</p>
+        <div class="highlight-box ceilings">
+            <p>Creta: <strong>₹22,000</strong></p>
+            <p>Train: <strong>₹21,000</strong></p>
+            <p>CBR650R: <strong>₹20,000</strong></p>
+            <p>XPulse: <strong>₹18,000</strong></p>
+        </div>
+    </article>
+
+    <article id="open">
+        <h2>Still open</h2>
+        <p>These are undecided, deciding in clarity.</p>
+        <ul>
+            <li>Vehicle choice.</li>
+            <li>Hotel booking.</li>
+            <li>Auspicious departure times for 9 and 11 January: choghadiya and panchang windows will be added closer to the date.</li>
+            <li>Fog check that week.</li>
+        </ul>
+    </article>
+</div>
+
+<footer>
+    <p><b>A personal plan, written so the facts stay clear.</b> Nothing here is a booking confirmation, except the registration, which is already paid.</p>
+    <p>Created: 16 November 2026</p>
+</footer>
+
+<script>
+(function () {
+    var root = document.documentElement;
+    var themeBtn = document.getElementById("theme");
+    var navToggle = document.getElementById("navToggle");
+    var mainNav = document.getElementById("mainNav");
+    var navOverlay = document.getElementById("navOverlay");
+    var navLinks = document.querySelectorAll(".nav-link");
+
+    function isDark() {
+        return root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+
+    themeBtn.addEventListener("click", function () {
+        root.dataset.theme = isDark() ? "light" : "dark";
+    });
+
+    function toggleNav() {
+        var open = !mainNav.classList.contains("active");
+        navToggle.classList.toggle("active", open);
+        mainNav.classList.toggle("active", open);
+        navOverlay.classList.toggle("active", open);
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        document.body.style.overflow = open ? "hidden" : "";
+    }
+
+    function closeNav() {
+        navToggle.classList.remove("active");
+        mainNav.classList.remove("active");
+        navOverlay.classList.remove("active");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+    }
+
+    navToggle.addEventListener("click", toggleNav);
+    navOverlay.addEventListener("click", closeNav);
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", closeNav);
+    });
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && mainNav.classList.contains("active")) closeNav();
+    });
+
+    var resizeTimer;
+    window.addEventListener("resize", function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+            if (window.innerWidth > 768 && mainNav.classList.contains("active")) closeNav();
+        }, 250);
+    });
+})();
+</script>
+</body>
+</html>
